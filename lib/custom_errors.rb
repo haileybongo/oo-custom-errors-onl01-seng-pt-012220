@@ -9,7 +9,7 @@ class Person
     self.partner = person
     if person.class != person 
       raise PartnerError
-      rescute PartnerError => error 
+      rescue PartnerError => error 
       puts error.message
     end
     else
@@ -20,7 +20,7 @@ end
 end
 
   class PartnerError < StandardError
-    "yu must give the get_married method an argument of an instance of the person class!"
+    "you must give the get_married method an argument of an instance of the person class!"
   end
 end
 
